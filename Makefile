@@ -1,5 +1,5 @@
 
-CFLAGS = -std=c11 -Wall -Wextra -pedantic -Wno -depreciated -Wstack-usage=1024
+CFLAGS = -std=c11 -Wall -Wextra -pedantic -Wno-deprecated -Werror -Wstack-usage=1024 -o
 
 problem2: problem2.c
-	gcc -o problem2 problem2.c -I.
+	gcc $(CFLAGS) problem2 problem2.c

@@ -13,7 +13,7 @@ int main (int argc, char *argv[]){
 	int reps = 99;
 	if (argc > 1 && 1 <= atoi(argv[1]) <= 99) reps = atoi(argv[1]);
 	while (reps > 0) printLine(reps--, true);
-
+	exit(0);
 }
 
 /*Prints a number as a string unless inText is false -- number is printed as a digit. 
